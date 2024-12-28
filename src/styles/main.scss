@@ -1,0 +1,50 @@
+:root {
+  --app-bg-color: #f5f7fa;
+  --app-text-color: #2c3e50;
+  --app-border-color: #dcdfe6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--app-text-color);
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #909399;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606266;
+}
+
+// Element Plus 主题变量覆盖
+:root {
+  --ep-color-primary: #409eff;
+  --ep-color-success: #67c23a;
+  --ep-color-warning: #e6a23c;
+  --ep-color-danger: #f56c6c;
+  --ep-color-info: #909399;
+  
+  --ep-bg-color: var(--app-bg-color);
+  --ep-text-color-primary: var(--app-text-color);
+  --ep-border-color: var(--app-border-color);
+} 
